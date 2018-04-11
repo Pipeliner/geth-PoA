@@ -47,7 +47,12 @@ eth.filter("pending", function(err, block) {
 function unlockAll() {
   for (var i = 0; i < eth.accounts.length; i++) {
     console.log("Unlocking Account " + i);
-    personal.unlockAccount(eth.accounts[i], "", 999999);
+    try {
+    	personal.unlockAccount(eth.accounts[i], "", 999999);
+    } catch(e)
+    {
+        console.log(e);
+    }
   }
 }
 unlockAll();
