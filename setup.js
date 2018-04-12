@@ -17,9 +17,12 @@ function createNewAccounts() {
   personal.newAccount("");
   personal.newAccount("");
   personal.newAccount("");
+  personal.newAccount("");
+  personal.newAccount("");
+  personal.newAccount("");
 }
 
-if (eth.accounts.length < 2) {
+if (eth.accounts.length < 6) {
   createNewAccounts();
 }
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GETH=/home/vadim/.config/Mist/binaries/Geth/unpacked/geth
+GETH=geth
 PORT=30303
 
 FILEPATH=`dirname $0`
